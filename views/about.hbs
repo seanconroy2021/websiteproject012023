@@ -1,0 +1,55 @@
+{{> menu id="about"}}
+
+
+  
+  <section class="ui grid   container segment inverted stackable ">
+
+            <div class=" ui six wide column">
+                <div class="ui row column">
+                      <h1 class="ui header inverted centered">
+            Where Are We Based ?
+                </h1>
+                    <div class="ui divider"></div>
+                    <div class="ui address">
+                <address>
+                  <strong>John Smith</strong><br>
+                  123 Main St<br>
+                  Anytown, CA 12345<br>
+                  USA<br>
+                  <i class="phone icon"></i>555-555-5555
+                </address>
+              </div>
+                </div>
+
+            
+            </div>
+
+            <div class="fluid center-align rounded image ui ten wide column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.859495389501!2d-7.140728783804641!3d52.24593567976322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c509ed0c5383%3A0x7867c02b440b9b2f!2sGrowth%20Hub!5e0!3m2!1sen!2sie!4v1678221049234!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+<section class="ui container  segment inverted aligned middle aligned ">
+  <h1 class="ui header inverted centered">
+  About Us ?
+  </h1>
+
+
+ 
+  <div class="ui inverted black centered  cards">
+    {{#each teamList}}
+      {{> teamListCard}}
+    {{/ each}}
+  </div>
+  <br>
+</section>
+
+{{> footer}}
+
+
+  
+  
+
+
+
