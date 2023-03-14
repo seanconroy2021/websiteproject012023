@@ -1,0 +1,11 @@
+{{> menu id="blog"}}
+<section class=" ui container">
+
+  <div class="ui centered ">
+    {{#each bloglists}}
+      {{> blogPost}}
+    {{/ each}}
+  </div>
+</section>
+
+{{> footer}}
