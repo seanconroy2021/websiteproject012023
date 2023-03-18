@@ -1,0 +1,30 @@
+<form class="ui stacked inverted gray segment form" action="/dashboard/addnotecollection" method="POST">
+   <div class="five fields">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="title" autofocus required title = "Please include a valid Title"
+      placeholder="title">
+    </div>
+    <div class="catergory">
+      <label>Catergory</label>
+      <input type="text" name="catergory" required title = "Please include a catergory"
+      placeholder="catergory"  >
+    </div>
+    <div class="field">
+      <label>Priorty</label>
+      <input type="text" name="priorty" required title = "Please include a valid priorty (1-5)"
+      placeholder="priorty"  >
+    </div>
+     <div class="field">
+      <label>Description</label>
+      <input type="text" name="description" required title = "Please enter a decription for the notes collection"
+      placeholder="description"  >
+    </div>
+     <div class="field">
+      <label>Icon</label>
+      <input type="text" name="Icon" required title = "Please include a valid icon"
+      placeholder="Icon"  >
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Note Collection</button>
+</form>

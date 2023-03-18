@@ -1,0 +1,28 @@
+{{#each noteList}}
+
+  <div class="ui inverted icon message">
+    <i class="{{iconName}} icon"></i>
+    <div class="content">
+      <div class="header">
+        {{title}}
+      </div>
+      <div class="catergory">
+        {{catergory}}
+      </div>
+      <p> {{description}}</p>
+       <span id="p{{id}}"></span>
+    </div>
+    <a class="ui small grey button" href="/notelist/{{id}}">View</a>
+    <a
+      class="ui small black button delnotecollection"
+      href="/dashboard/deleteNoteCollection/{{id}}"
+    >Delete</a>
+
+  </div>
+<script>
+  for (let i=0; i < {{priorty}}; i++) {
+    document.querySelector("#p{{id}}").innerHTML += "<i class='bolt icon'></i>";
+  }
+</script>
+  
+{{/each}}
