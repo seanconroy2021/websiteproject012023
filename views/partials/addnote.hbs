@@ -1,0 +1,20 @@
+<form class="ui stacked inverted gray segment form" action="/notelist/{{notelist.id}}/addnote" method="POST">
+  <div class="three fields">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="title" autofocus required title = "Please include a valid Title"
+      placeholder="title">
+    </div>
+    <div class="field">
+      <label>Due Date</label>
+      <input type="text" name="dueDate" required title = "Please include a valid due date"
+      placeholder="dueDate"  >
+    </div>
+    <div class="field">
+      <label>Note</label>
+      <input type="text" name="note" required title = "Please include a valid note"
+      placeholder="note"  >
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Note</button>
+</form>

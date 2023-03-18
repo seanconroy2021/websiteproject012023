@@ -1,20 +1,16 @@
 'use strict';
 
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const blogCollection = require("./blogPost-store.json");
-
+import JsonStore from './json-store.js';
+            
 const blogPostStore = {
 
-  // import the blog collection object
-  blogCollection: blogCollection.blogCollection,
+  store: new JsonStore('./models/blogPost-store.json', { blogCollection: [] }),
+  collection: 'blogCollection',
 
-  // function to get all of the blogcollection
   getAllBlogPosts() {
-    return this.blogCollection;
+    return this.store.findAll(this.collection);
   },
 
 };
 
-// export the blogstore object so it can be used elsewhere
 export default blogPostStore;

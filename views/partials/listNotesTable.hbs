@@ -1,4 +1,4 @@
-<table class="ui fixed inverted rounded gray striped table">
+<table class="ui fixed inverted rounded black striped table">
   <thead>
     <tr>
       <th>Title</th>
@@ -19,9 +19,12 @@
           {{note}}
         </td>
       <td>
- <a href="/notelist/{{../notelist.id}}/deletenote/{{id}}" 
-    class="ui tiny black button delnote">Delete Song</a>
+<a href="/notelist/{{../notelist.id}}/deletenote/{{id}}" class="ui icon inverted grey tiny button delnote">
+  <i class="ui trash icon"></i>
+</a>
 </td>
+        
+     
        
       </tr>
     {{/each}}

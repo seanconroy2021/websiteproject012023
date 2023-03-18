@@ -5,4 +5,4 @@
 console.log("Hello this is the Note keeper App");
 
 $(".delnote").click(() => confirm('Really delete this note?'))
-
+$(".delnotecollection").click(() => confirm('Really delete this note collection?'))

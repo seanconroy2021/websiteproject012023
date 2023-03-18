@@ -18,6 +18,11 @@ router.get('/about', about.index);
 router.get('/blog', blog.index);
 router.get('/notelist/:id', notelist.index);
 router.get('/notelist/:id/deletenote/:noteid', notelist.deleteNote);
+router.get('/dashboard/deleteNoteCollection/:id', dashboard.deleteNoteCollection);
+router.post('/notelist/:id/addnote', notelist.addnote);
+router.post('/dashboard/addnotecollection', dashboard.addnotecollection);
+
+
 
 
 // export router module

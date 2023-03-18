@@ -1,53 +1,15 @@
 {{> menu id="dashboard"}}
-
-{{#each noteList}}
 <section class="ui container">
-<div class="ui inverted icon message">
-  <i class=" {{iconName}} icon"></i>
-  <div class="content">
-    <div class="header">
-     {{title}}
-    </div>
-    <div class="catergory">
-    {{catergory}}
-    </div>
-    <p> {{description}}</p>
-     <span id="priorty"></span>
-  </div>
-  <a class="ui grey button" href="/noteList/{{id}}">View</a>
-  <a class="ui grey button" href="/noteList/{{id}}">View</a>
-  <a class="ui grey button" href="/noteList/{{id}}">View</a>
-    
-</div>
+{{> NoteCollection}}
+{{> addnotecollection}}
 </section>
 
+{{> footer}}
 
 
 
 
-<!--   <section class="ui container inverted gray clearing segment">
-    <h2 class="ui header">{{title}}</h2>
-    <p>{{catergory}}</p>
-    <p>
-      {{description}}
-    </p>
-     <p>
-  <span id="priorty"></span>
-</p>
-    <div class="ui right floated middle aligned segment-icon">
-      <i id="iconNotes" class="ui huge  {{iconName}} icon"></i>
-    </div>
-    <a class="ui grey button" href="/noteList/{{id}}">View</a>
-  </section>
- -->
-<script> 
-          for (let i=0; i < {{priorty}}; i++)
-          {
-         document.querySelector("#priorty").innerHTML +="<i class='g bolt icon'></i>";
-          }
-</script>
 
 
 
-{{/each}}
 

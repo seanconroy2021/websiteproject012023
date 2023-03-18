@@ -5,12 +5,16 @@
 import express from "express";
 import exphbs from "express-handlebars";
 import logger from "./utils/logger.js";
+import bodyParser from "body-parser";
+
 
 // initialise project
 const app = express();
 
 // static files output to public folder
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: false, }));
+
 
 // use handlebars as view engine
 const handlebars = exphbs.create({ extname: ".hbs" });
