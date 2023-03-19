@@ -4,25 +4,39 @@
     <i class="{{iconName}} icon"></i>
     <div class="content">
       <div class="header">
-        {{title}}
+        <h1>
+          {{title}}
+        </h1>
       </div>
       <div class="catergory">
-        {{catergory}}
+        <p>
+          Catergory:
+          {{catergory}}
+        </p>
       </div>
-      <p> {{description}}</p>
-       <span id="p{{id}}"></span>
+      <div class="Description ui">
+        <p>
+          Description:
+          {{description}}
+        </p></div>
+
+      <p>
+        Priority:
+        <span id="n{{id}}"></span>
+      </p>
+
     </div>
     <a class="ui small grey button" href="/notelist/{{id}}">View</a>
     <a
-      class="ui small black button delnotecollection"
+      class="ui small white inverted button delnotecollection"
       href="/dashboard/deleteNoteCollection/{{id}}"
-    >Delete</a>
+    >
+      <i class="ui trash icon"></i></a>
 
   </div>
-<script>
-  for (let i=0; i < {{priorty}}; i++) {
-    document.querySelector("#p{{id}}").innerHTML += "<i class='bolt icon'></i>";
-  }
-</script>
-  
+  <script>
+    for (let i=0; i <
+    {{priorty}}; i++) { document.querySelector("#n{{id}}").innerHTML += "<i class='bolt icon'></i>";}
+  </script>
+
 {{/each}}

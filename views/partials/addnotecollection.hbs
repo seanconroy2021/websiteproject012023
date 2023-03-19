@@ -1,30 +1,113 @@
-<form class="ui stacked inverted gray segment form" action="/dashboard/addnotecollection" method="POST">
-   <div class="five fields">
+<form
+  class="ui stacked inverted gray segment form"
+  action="/dashboard/addnotecollection"
+  method="POST"
+>
+  <div class="five fields">
     <div class="field">
       <label>Title</label>
-      <input type="text" name="title" autofocus required title = "Please include a valid Title"
-      placeholder="title">
+      <input
+        type="text"
+        name="title"
+        autofocus
+        required
+        title="Please include a valid Title"
+        placeholder="Travel ideas"
+      />
     </div>
-    <div class="catergory">
+
+    <!--     ICON PART
+    
+     -->
+
+    <div class="field">
+      <label>Icon</label>
+      <div class="ui selection dropdown">
+        <input type="hidden" name="iconName" />
+        <i class="dropdown icon"></i>
+        <div class="default text">Home</div>
+        <div class="menu">
+          <div class="item" data-value="home">Home
+            <i class="home icon"></i>
+          </div>
+
+          <div class="item" data-value="leanpub">Education
+            <i class="leanpub icon"></i>
+          </div>
+
+          <div class="item" data-value="terminal">Code
+            <i class="terminal icon"></i>
+          </div>
+
+          <div class="item" data-value="lightbulb">Bulb
+            <i class="lightbulb icon"></i>
+          </div>
+          <div class="item" data-value="address book ">Contact
+            <i class="address book icon"></i>
+          </div>
+          <div class="item" data-value="Plane ">Plane
+            <i class="plane icon"></i>
+          </div>
+          <div class="item" data-value="tasks ">Task
+            <i class="tasks icon"></i>
+          </div>
+          <div class="item" data-value="euro sign ">Euro
+            <i class="euro sign icon"></i>
+          </div>
+          <div class="item" data-value="pencil alternate ">Pencil
+            <i class="pencil alternate icon"></i>
+          </div>
+          <div class="item" data-value="bars ">Bars
+            <i class="bars icon"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--     https://semantic-ui.com/collections/form.html
+    
+     -->
+
+    <div class="field">
       <label>Catergory</label>
-      <input type="text" name="catergory" required title = "Please include a catergory"
-      placeholder="catergory"  >
+      <div class="ui selection dropdown">
+        <input type="hidden" name="catergory" />
+        <i class="dropdown icon"></i>
+        <div class="default text">Travel</div>
+        <div class="menu">
+          <div class="item" data-value="Home">Home</div>
+          <div class="item" data-value="Work">Work</div>
+          <div class="item" data-value="College">College</div>
+          <div class="item" data-value="Finances">Finances</div>
+          <div class="item" data-value="Travel">Travel</div>
+          <div class="item" data-value="Miscellaneous">Miscellaneous.</div>
+        </div>
+      </div>
     </div>
+
     <div class="field">
       <label>Priorty</label>
-      <input type="text" name="priorty" required title = "Please include a valid priorty (1-5)"
-      placeholder="priorty"  >
+      <input
+        type="number"
+        name="priorty"
+        required
+        min="1"
+        max="5"
+        title="Please include a valid priorty (1-5)"
+        placeholder="Priorty (1-5)"
+      />
     </div>
-     <div class="field">
+    <div class="field">
       <label>Description</label>
-      <input type="text" name="description" required title = "Please enter a decription for the notes collection"
-      placeholder="description"  >
+      <input
+        type="text"
+        name="description"
+        required
+        title="Please enter a decription for the notes collection"
+        placeholder="This note collection is to keep track ...."
+      />
     </div>
-     <div class="field">
-      <label>Icon</label>
-      <input type="text" name="Icon" required title = "Please include a valid icon"
-      placeholder="Icon"  >
-    </div>
+
   </div>
-  <button class="ui blue submit button">Add Note Collection</button>
+  <button class="ui gray submit button">Add Note Collection</button>
 </form>

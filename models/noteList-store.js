@@ -9,10 +9,10 @@ const noteListStore = {
   store: new JsonStore("./models/noteList-store.json", { noteList: [] }),
   collection: "noteList",
 
-  // import the playlist collection object
+  // import the NoteKeeper collection object
   noteList: noteList.noteList,
 
-  // function to get all of the playlists
+  // function to get all of the NoteKeeper
   getAllNotes() {
     return this.store.findAll(this.collection);
   },
@@ -29,8 +29,8 @@ const noteListStore = {
   },
 
   removeNoteCollection(id) {
-    const playlist = this.getPlaylist(id);
-    this.store.removeCollection(this.collection, playlist);
+    const noteListCollection = this.getnotelistid(id);
+    this.store.removeCollection(this.collection, noteListCollection);
   },
 
   addnote(id, note) {
@@ -42,5 +42,6 @@ const noteListStore = {
   },
 };
 
-// export the playlistStore object so it can be used elsewhere
+// export the NoteKeeperStore object so it can be used elsewhere
 export default noteListStore;
+

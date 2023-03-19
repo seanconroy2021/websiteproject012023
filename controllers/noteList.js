@@ -19,7 +19,7 @@ const notelist = {
     deleteNote(request, response) {
     const notelistId = request.params.id;
     const noteId = request.params.noteid;
-    logger.debug(`Deleting Song ${noteId} from Playlist ${notelistId}`);
+    logger.debug(`Deleting Song ${noteId} from notelist ${notelistId}`);
     noteListstore.removeNote(notelistId, noteId);
     response.redirect('/noteList/' + notelistId); 
   },
