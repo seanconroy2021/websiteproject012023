@@ -1,31 +1,29 @@
 {"teamList":
   [
     {
-      "name":"sean",
-      "fullname":"Sean Conroy",
-      "image":"https://seanconroy.link/assets/img/download.png",
+      "name":"Eliza",
+      "fullname":"Eliza Conroy",
+      "image":"https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/Headshot-on-Black-Background_1.jpg.webp?v=1679161811921",
+      "joined":2020,
+      "job":"CEO- Note Keeper",
+      "city":"Waterford"
+      
+    },
+    {
+      "name":"Shauna",
+      "fullname":"Shauna Walsh",
+      "image":"https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/istockphoto-1301953681-170667a.jpg?v=1679161815760",
       "joined":2023,
-      "job":"CEO",
-      "city":"Wexford",
-      "mates":10
+      "job":"Note Keeper Backend Devloper",
+      "city":"Waterford"
     },
     {
-      "name":"Helen",
-      "fullname":"Helen Hess",
-      "image":"https://cdn.glitch.com/7435e8d3-a4cc-4944-ba05-d703398351be%2Fhelen.jpg?1554913157725",
-      "joined":2013,
-      "job":"Art Director",
-      "city":"New York",
-      "mates":22
-    },
-    {
-      "name":"Elliot",
-      "fullname":"Elliot Fu",
-      "image":"https://cdn.glitch.com/7435e8d3-a4cc-4944-ba05-d703398351be%2Felliot.jpg?1554913157770",
-      "joined":2015,
-      "job":"Research Assistant",
-      "city":"New York",
-      "mates":26
+      "name":"Leah",
+      "fullname":"Leah Smith",
+      "image":"https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/corporateheadshots-1024x683.jpg?v=1679161890180",
+      "joined":2023,
+      "job":"Note Kepper Front End Devloper",
+      "city":"Waterford"
     }
   ]
 }

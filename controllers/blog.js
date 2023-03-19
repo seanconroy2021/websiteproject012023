@@ -15,7 +15,7 @@ const blog = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
+      title: 'Blog',
       bloglists: blogPostStore.getAllBlogPosts(),
     };
     

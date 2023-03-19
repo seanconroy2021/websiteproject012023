@@ -1,122 +1,119 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Helvetica Neue, arial, sans-serif;
 
- background: url('https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/Abstract%20background1.jpg?v=1678328845104') no-repeat center center fixed; 
-background-size: cover;
+  background: url("https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/Abstract%20background1.jpg?v=1678328845104")
+    no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
   font-style: italic;
-  color: #373fff;
+
 }
 
-#readmore {
+
+
+#iconNotes {
+  float: right;
+  margin-top: -5.5rem;
+}
+
+#author
+{
+ margin-top: -3%;
+ float: right;
+ opacity: 0.7;
+ font-weight: 400;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+}
+
+p,a
+{
+  font-size: 110%;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Button and messages */
+#tocome {
   display: none;
-}
-
-#welcomeuser {
-  display: none;
-}
-
-
-
-
-      start {
-        -webkit-font-smoothing: antialiased;
-        -moz-font-smoothing: grayscale;
-      }
-
-
-        nav.ui.container .ui.header {
-          float: left;
-          margin-top: 12px;
-        }
-
-        nav.ui.container .ui.inverted.compact.menu {
-          float: right;
-        }
-    
-
-      .ui.inverted.vertical.center.aligned.segment {
-        padding-top: 36px;
-      }
-
-      nav.ui.container .ui.inverted.compact.menu {
-        background-color: rgb(51, 51, 51);
-      }
-
-      nav.ui.container .ui.inverted.compact.menu .item {
-        padding-bottom: 0;
-      }
-
-      nav.ui.container .ui.inverted.compact.menu .item {
-        font-size: 16px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 14px;
-        margin-left: 16px;
-        margin-right: 16px;
-        border-radius: 0;
-      }
-
-      nav.ui.container .ui.inverted.compact.menu .active.item {
-        background-color: inherit;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 2px;
-      }
-
-      .ui.inverted.vertical.segment {
-        height: 100vh;
-        background-color: rgb(51, 51, 51);
-      }
-
-      .ui.content.container {
-        height: 300px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-
-      .ui.content.container h1.header {
-        font-size: 36px;
-      }
-
-      .ui.content.container p {
-        font-size: 21px;
-        line-height: 1.6;
-        font-weight: 300;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      .ui.inverted.vertical.segment footer.ui.segment {
-        height: 80px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        color: gray;
-      }
-
-      .ui.inverted.vertical.segment footer.ui.segment a {
-        color: white;
-      }
-
-.opaque {
-  opacity: 0.7; /* set the opacity level as needed */
 }
 
 #imagesStart {
-  margin-top: 420px; /* adjust the margin as needed */
+  margin-top: 420px;
+  display: block;
 }
 
-#iconNotes {
-float: right;
-margin-top: -5.5rem; 
-  
+#welcomeusernotekeeper {
+  display: none;
+}
+#welcomeusernotekeeperNOUSER {
+  display: block;
+}
+
+/* Template for the start page css  https://semantic-ui-forest.com/templates */
+start { 
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+nav.ui.container .ui.header {
+  float: left;
+  margin-top: 12px;
+}
+
+nav.ui.container .ui.inverted.compact.menu {
+  float: right;
+}
+
+.ui.inverted.vertical.center.aligned.segment {
+  padding-top: 36px;
+}
+
+.ui.inverted.vertical.segment {
+  height: 100vh;
+  background-color: rgb(51, 51, 51);
+}
+
+.ui.content.container {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ui.content.container h1.header {
+  font-size: 36px;
+}
+
+.ui.content.container p {
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ui.inverted.vertical.segment footer.ui.segment {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: gray;
+}
+
+.ui.inverted.vertical.segment footer.ui.segment a {
+  color: white;
+}
+
+.opaque {
+  opacity: 0.7;
 }
 
