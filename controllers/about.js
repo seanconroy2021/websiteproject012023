@@ -15,7 +15,7 @@ const about = {
     
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'About the Note Keeper App',
+      title: 'About',
       teamList: teamListStore.getAllTeam(),
     };
     

@@ -7,7 +7,20 @@
       "priorty": "5",
       "description": "My holiday to Spain stuff that I need to get done before I go",
       "iconName": "Plane ",
-      "notes": []
+      "notes": [
+        {
+          "id": "a151260b-e2e6-4b74-be96-df000d90fe7b",
+          "title": "Book Flights",
+          "dueDate": "2023-04-30",
+          "note": "Book flights for me and my family to Spain using Ryan air "
+        },
+        {
+          "id": "a3152933-3e5d-4326-ae5f-5dfc9c9830b6",
+          "title": "Toiletries ",
+          "dueDate": "2023-04-30",
+          "note": "To go into town and buy travel friendly toiletries"
+        }
+      ]
     },
     {
       "id": "a8e74433-691d-4464-b75d-995ad0cc62bb",
@@ -16,6 +29,28 @@
       "priorty": "1",
       "description": "This Note Collection is to keep track on what food I need eat for next 5 days.",
       "iconName": "bars ",
+      "notes": [
+        {
+          "id": "2c169840-04bf-4901-86e4-755ab652d595",
+          "title": "Personal Trainer ",
+          "dueDate": "2023-03-20",
+          "note": "Personal Trainer in Surf Shark with John Cash"
+        },
+        {
+          "id": "cf5e8cb4-4864-43d5-a33c-2126d45a057e",
+          "title": "Buy AirFryer",
+          "dueDate": "2023-03-19",
+          "note": "In Tesco their is a sale on Airfryer for €100 make sure to get one before they are sold out"
+        }
+      ]
+    },
+    {
+      "id": "5c5e6734-c82f-4c4d-8b72-90eaba7b88ef",
+      "title": "Semester 4 To Do List for Assingments ",
+      "catergory": "College",
+      "priorty": "5",
+      "description": "All projects tasks that need to be completed for my CA.",
+      "iconName": "leanpub",
       "notes": []
     }
   ]
