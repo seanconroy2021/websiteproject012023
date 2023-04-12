@@ -2,6 +2,7 @@
   class="ui stacked inverted gray segment form"
   action="/notelist/{{notelist.id}}/addnote"
   method="POST"
+  enctype="multipart/form-data"
 >
   <div class="three fields">
     <div class="field">
@@ -36,6 +37,11 @@
         placeholder="Insert css into web app"
       />
     </div>
+    <div class="field">
+    <label>Image Reminder</label>
+    <input placeholder="Image Reminder" type="file" name="image" required>
+    </div>
+
 
   </div>
   <button class="ui gray submit button">Add Note</button>
