@@ -4,6 +4,17 @@ const require = createRequire(import.meta.url);
 const noteList = require("./noteList-store.json");
 import logger from "../utils/logger.js";
 import JsonStore from "./json-store.js";
+import cloudinary from 'cloudinary';
+
+try {
+  const env = require("../.data/.env.json");
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
+
 
 const noteListStore = {
   store: new JsonStore("./models/noteList-store.json", { noteList: [] }),
@@ -33,10 +44,37 @@ const noteListStore = {
     this.store.removeCollection(this.collection, noteListCollection);
   },
 
-  addnote(id, note) {
-    const noteList = this.getnotelistid(id);
-    noteList.notes.push(note);
-  },
+  // addnote(id, note) {
+  //   const noteList = this.getnotelistid(id);
+  //   noteList.notes.push(note);
+  // },
+  
+  
+async addnote(id, note,response) {
+  function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(note.image.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  note.image = result.url;
+  
+  
+  const noteList = this.getnotelistid(id);
+  logger.info('noteList id...', noteList);
+  logger.info(noteList.notes.push(note));
+  response();
+},
+
+
+
+  
+  
+  
   addnotecollection(notelistcollection) {
     this.store.addCollection(this.collection, notelistcollection);
   },

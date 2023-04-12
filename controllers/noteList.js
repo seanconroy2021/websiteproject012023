@@ -25,6 +25,8 @@ const notelist = {
     noteListstore.removeNote(notelistId, noteId);
     response.redirect('/noteList/' + notelistId); 
   },
+  
+  
    addnote(request, response) {
     const notelistId = request.params.id;
     const notelist = noteListstore.getnotelistid(notelistId);
@@ -33,9 +35,12 @@ const notelist = {
       title: request.body.title,
       dueDate: request.body.dueDate,
       note:request.body.note,
+      image:request.files.image
     };
-    noteListstore.addnote(notelistId, newnote);
-    response.redirect('/noteList/' + notelistId);
+    logger.debug("Creating a new Note..." + newnote);
+      noteListstore.addnote(notelistId,newnote, function() {
+       response.redirect('/noteList/' + notelistId);;
+      });
   },
   
   // new stuff

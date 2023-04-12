@@ -1,32 +1,12 @@
 {
   "noteList": [
     {
-      "id": "c79aada5-4392-4a15-9e88-201bf13fc216",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Sean",
-      "catergory": "Work",
-      "priorty": "1",
-      "description": "1",
-      "iconName": "home",
-      "notes": []
-    },
-    {
-      "id": "9ad20c61-ed4b-4373-9baa-40aeaaf1de9d",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Sean",
-      "catergory": "College",
-      "priorty": "1",
-      "description": "1212",
-      "iconName": "terminal",
-      "notes": []
-    },
-    {
-      "id": "9a2c1a8e-3c03-49ef-8a3a-cffd97906e2c",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "title": "are",
+      "id": "d72b3292-c1f5-4c7e-a81f-6f257f8cc20f",
+      "userid": "db2c45f4-07ad-448c-8f73-3e07fdc0266b",
+      "title": "sean",
       "catergory": "Home",
       "priorty": "1",
-      "description": "12",
+      "description": "sea",
       "iconName": "home",
       "notes": []
     }
