@@ -2,24 +2,41 @@
 
 // import all required modules
 import logger from '../utils/logger.js';
+import noteListstore from '../models/noteList-store.js';
+import accounts from './accounts.js';
+
 
 // create start object
 const start = {
   
-  // index method - responsible for creating and rendering the view
   index(request, response) {
-    
-    // display confirmation message in log
+
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.info('start rendering');
-    
-    // create view data object (contains data to be sent to the view e.g. page title)
-    const viewData = {
-      title: 'Welcome to the Note Keeper App!',
-    };
-    
-    // render the start view and pass through the data
-    response.render('start', viewData);
+
+    if(loggedInUser){
+
+     const notelist = noteListstore.getAllNotes();
+      let numnotelists = notelist.length;
+      let numnotes = 0;
+    for (let item of notelist) {
+     numnotes += item.notes.length;
+    }
+
+      const viewData = {
+        title: 'Welcome to the Note Keeper App!',
+        totalnotelist: numnotelists,
+        totalnotes: numnotes,
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        profile: loggedInUser.profilepic
+      };
+
+      response.render('start', viewData);
+    }
+    else response.redirect('/error');
   },
+
+  
 };
 
 // export the start module

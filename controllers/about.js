@@ -3,25 +3,27 @@
 // import all required modules
 import logger from '../utils/logger.js';
 import teamListStore from '../models/teamList-store.js';
+import accounts from './accounts.js';
+
 
 // create about object
 const about = {
   
-  // index method - responsible for creating and rendering the view
-  index(request, response) {
-    
-    // display confirmation message in log
+   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.info('about rendering');
-    
-    // create view data object (contains data to be sent to the view e.g. page title)
-    const viewData = {
-      title: 'About',
-      teamList: teamListStore.getAllTeam(),
-    };
-    
-    // render the about view and pass through the data
-    response.render('about', viewData);
+    if (loggedInUser) {
+      const viewData = {
+        title: 'About the Note Keeper',
+        developers: teamListStore.getAllTeam(),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+      response.render('about', viewData);
+    }
+    else response.redirect('/');    
   },
+
+  
 };
 
 // export the about module

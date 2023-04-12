@@ -40,6 +40,19 @@ const noteListStore = {
   addnotecollection(notelistcollection) {
     this.store.addCollection(this.collection, notelistcollection);
   },
+  
+  //new stuff
+    editnote(id, noteid, updatednote) {
+    const arrayName = "notes";
+    this.store.editItem(this.collection, id, noteid, arrayName, updatednote);
+  },
+    
+  getUserNotelist(userid) {
+    return this.store.findBy(this.collection, (noteList => noteList.userid === userid));
+  },
+
+
+  
 };
 
 // export the NoteKeeperStore object so it can be used elsewhere

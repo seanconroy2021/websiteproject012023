@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "sean",
+      "password": "sean",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "seam",
+      "lastName": "conroy",
+      "email": "sdsdsd",
+      "password": "sdsds",
+      "id": "b7fdd32e-d8d8-4a6b-9332-0569ec6d6d12"
+    },
+    {
+      "firstName": "eliza",
+      "lastName": "conroy",
+      "email": "eliza",
+      "password": "eliza",
+      "id": "b4eee07a-da71-47a7-a0a1-906dedd13157"
+    },
+    {
+      "firstName": "marion",
+      "lastName": "conroy",
+      "email": "marion",
+      "password": "marion",
+      "id": "a292221c-5fed-4998-8bd2-5a47f8c9002f"
+    },
+    {
+      "firstName": "apple",
+      "lastName": "asas",
+      "email": "apple",
+      "password": "sean",
+      "id": "97f2ef70-03d7-420d-beb5-9a64cfd0e85d"
+    },
+    {
+      "firstName": "sean",
+      "lastName": "sean",
+      "email": "dad",
+      "password": "sean",
+      "id": "affd4f31-3d7d-480e-9ca2-b1625855b435",
+      "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681256949/krbsavpvmjgeq9tb0hum.png"
+    },
+    {
+      "firstName": "apple",
+      "lastName": "apple",
+      "email": "apple",
+      "password": "a[[;e",
+      "id": "23efd80b-8c07-46d1-b5f8-91af9688cf3a",
+      "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681257682/ghxryjjkj38kc16psxpg.webp"
+    },
+    {
+      "firstName": "banna",
+      "lastName": "banna",
+      "email": "banna",
+      "password": "sean",
+      "id": "8988e704-1234-48d3-972d-2a9fc1491b88",
+      "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681257717/tz7j4tpemgdypaznabfi.jpg"
+    }
+  ]
+}
