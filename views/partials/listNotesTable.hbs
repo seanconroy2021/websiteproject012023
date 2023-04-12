@@ -1,32 +1,45 @@
-<table class="ui fixed inverted rounded black striped table">
+<table class="ui striped table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Due Date</th>
-      <th>Note</th>
+      <th class="four wide">Title</th>
+      <th class="four wide">Due Date</th>
+      <th class="three wide">Note</th>
+      <th class="one wide"> </th>
+      <th class="one wide"> </th>
     </tr>
   </thead>
-  <tbody>
+<tbody>
     {{#each notelist.notes}}
-      <tr>
-        <td>
-          {{title}}
-        </td>
-        <td>
-          {{dueDate}}
-        </td>
-        <td>
-          {{note}}
-        </td>
-      <td>
-<a href="/notelist/{{../notelist.id}}/deletenote/{{id}}" class="ui icon inverted grey tiny button delnote">
-  <i class="ui trash icon"></i>
-</a>
-</td>
-        
-     
-       
-      </tr>
+    <form class = "ui stacked segment form" action="/notelist/{{../notelist.id}}/updatenote/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input type="text" name="title" autofocus required title = "Please include a valid Title" placeholder="Title" value = "{{title}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="dueDate" required title = "Please include a valid Artist" placeholder="Due Date" value = "{{dueDate}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+          <input type="text" name="note" autofocus required title = "Please include a valid Genre" placeholder="Note" value = "{{note}}">         
+        </span>
+      </td>
+      <td class="center aligned">
+        <button class="ui submit icon button"><i class="ui pencil alternate icon"></i></button>
+      </td>
+      <td class="center aligned">
+        <a href="/notelist/{{../notelist.id}}/deletenote/{{id}}" class="ui icon button delnote">
+          <i class="ui trash icon"></i>
+        </a>
+      </td>
+    </tr>
+    </form> 
     {{/each}}
   </tbody>
 </table>
+
+
+

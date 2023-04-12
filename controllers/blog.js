@@ -3,26 +3,27 @@
 // import all required modules
 import logger from '../utils/logger.js';
 import blogPostStore from '../models/blogPost-store.js';
+import accounts from './accounts.js';
 
-// create about object
+
+// create blog object
 const blog = {
-  
-  // index method - responsible for creating and rendering the view
-  index(request, response) {
-    
-    // display confirmation message in log
-    logger.info('about rendering');
-    
-    // create view data object (contains data to be sent to the view e.g. page title)
-    const viewData = {
-      title: 'Blog',
-      bloglists: blogPostStore.getAllBlogPosts(),
-    };
-    
-    // render the about view and pass through the data
-    response.render('blog', viewData);
+   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.info('blog rendering');
+    if (loggedInUser) {
+      const viewData = {
+        title: 'Blog',
+        bloglists: blogPostStore.getAllBlogPosts(),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+      response.render('blog', viewData);
+    }
+    else response.redirect('/');    
   },
+ 
+
 };
 
-// export the about module
+// export the blog module
 export default blog;

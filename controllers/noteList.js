@@ -4,6 +4,8 @@
 import logger from '../utils/logger.js';
 import { v4 as uuidv4 } from 'uuid';
 import noteListstore from '../models/noteList-store.js';
+import accounts from './accounts.js';
+
 
 const notelist = {
   index(request, response) {
@@ -35,6 +37,23 @@ const notelist = {
     noteListstore.addnote(notelistId, newnote);
     response.redirect('/noteList/' + notelistId);
   },
+  
+  // new stuff
+  
+    updatenote(request, response) {
+    const notelistId = request.params.id;
+    const noteId = request.params.noteid;
+    logger.debug("updating note " + noteId);
+    const updatednote = {
+      id: noteId,
+      title: request.body.title,
+      dueDate: request.body.dueDate,
+      note: request.body.note,
+    };
+    noteListstore.editnote(notelistId, noteId, updatednote);
+    response.redirect('/noteList/' + notelistId);
+  }
+
 };
 
 

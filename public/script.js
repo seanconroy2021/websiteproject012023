@@ -47,7 +47,7 @@ button3 &&
    
     document.querySelector("#welcomeusernotekeeper").innerHTML = `<p> Hello, ${username}, 
     this app is designed to make note-taking quick, easy, and hassle-free. With a simple and intuitive interface, you can create, edit, and organize notes in seconds.
-    ${username} your productivity will now greatly increase as a result of utilizing Note Keeper App.</p> <br>`;
+    ${username} your preoductivity will now greatly increase as a result of utilizing Note Keeper App.</p> <br>`;
     welcomeUserDiv.style.cursor = "pointer";
   });
 
