@@ -64,9 +64,12 @@ async addnote(id, note,response) {
   note.image = result.url;
   
   
-  const noteList = this.getnotelistid(id);
-  logger.info('noteList id...', noteList);
-  logger.info(noteList.notes.push(note));
+  
+  
+    const arrayName = "notes";
+    const noteList = this.getnotelistid(id);
+    logger.info('noteList id...', noteList);
+    this.store.addItem(this.collection, id, arrayName, note);
   response();
 },
 
