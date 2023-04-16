@@ -16,6 +16,7 @@ const blog = {
         title: 'Blog',
         bloglists: blogPostStore.getAllBlogPosts(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        profile: loggedInUser.profilepic
       };
       response.render('blog', viewData);
     }

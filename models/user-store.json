@@ -7,6 +7,23 @@
       "password": "sean",
       "id": "db2c45f4-07ad-448c-8f73-3e07fdc0266b",
       "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681298365/fkw6xbwzp5l0dmudwbps.jpg"
+    },
+    {
+      "firstName": "sean",
+      "lastName": "sean",
+      "email": "sean@mail.ie",
+      "password": "BWULED9c3",
+      "id": "6d4f7f1a-01e2-48b8-a2f6-0b55011a16dc",
+      "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681314276/mrgsm0gydntxkbvk6vuo.jpg"
+    },
+    
+    {
+      "firstName": "William",
+      "lastName": "Conroy",
+      "email": "william@conroy.ie",
+      "password": "Rosebud@2204",
+      "id": "5772fdc3-5380-4ff4-99a8-4e6f860a25b6",
+      "profilepic": "http://res.cloudinary.com/duihhoiso/image/upload/v1681322359/hbaxts36qvffu0ija105.jpg"
     }
   ]
 }

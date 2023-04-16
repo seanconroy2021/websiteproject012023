@@ -17,6 +17,7 @@ const about = {
         title: 'About the Note Keeper',
         developers: teamListStore.getAllTeam(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        profile: loggedInUser.profilepic
       };
       response.render('about', viewData);
     }

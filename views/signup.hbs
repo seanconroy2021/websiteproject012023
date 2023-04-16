@@ -1,6 +1,6 @@
 {{> welcomemenu id="signup"}}
 
-<form class="ui stacked segment form" action="/register" method="POST" enctype="multipart/form-data">
+<!-- <form class="ui stacked segment form" action="/register" method="POST" enctype="multipart/form-data">
   <h3 class="ui header">Register</h3>
   <div class="two fields">
     <div class="field">
@@ -27,3 +27,102 @@
   </div>
   <button class="ui blue submit button">Submit</button>
 </form>
+ -->
+
+<!-- https://semantic-ui-forest.com/templates/semantic-ui/login -->
+ <style type="text/css">
+      body {
+        background-color: #dadada;
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: grayscale;
+      }
+
+      body > .ui.grid {
+        height: 100%;
+      }
+
+      .column {
+        max-width: 450px;
+      }
+</style>
+
+  <body id="root">
+    <div class="ui middle aligned center aligned grid">
+      <div class="column">
+        <h2 class="ui inverted center aligned header">
+          <img class="image" src="https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/79a1a9fb-f4cb-495b-99cf-97eb8d24e974.image.png?v=1678188906814" /> Signup to an account
+          
+        </h2>
+        
+        <form class="ui  large form" action="/register" method="POST" enctype="multipart/form-data" >
+          <div class="ui stacked segment">
+            <div class=" two fields">
+                   <div class="field">
+      <label for="firstName">First Name</label>
+      <input placeholder="First Name" type="text"  name="firstName" autofocus required>
+    </div>
+    <div class="field">
+      <label for="lastName">Last Name</label>
+      <input placeholder="Last Name" type="text"  name="lastName" required>
+    </div>
+            </div>
+              <div class="field">
+    <label for="email">Email</label>
+    <input placeholder="Email" type="text" name="email" required>
+  </div>
+  <div class="field">
+    <label>Image</label>
+    <input placeholder="Image" type="file" name="profilepic" required>
+</div>
+
+  <div class="field">
+    <label for="password">Password</label>
+    <input type="password" name="password" required>
+  </div>
+            
+            
+            <button class="ui black submit button">Login</button>
+          </div>
+          <div class="ui error message"></div>
+        </form>
+        <div class="ui message">Have an account ?<a href="/login"> Login </a></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".ui.form").form({
+          fields: {
+            email: {
+              identifier: "email",
+              rules: [
+                {
+                  type: "empty",
+                  prompt: "Please enter your e-mail"
+                },
+                {
+                  type: "email",
+                  prompt: "Please enter a valid e-mail"
+                }
+              ]
+            },
+            password: {
+              identifier: "password",
+              rules: [
+                {
+                  type: "empty",
+                  prompt: "Please enter your password"
+                },
+                {
+                  type: "length[6]",
+                  prompt: "Your password must be at least 6 characters"
+                }
+              ]
+            }
+          }
+        });
+      });
+    </script>
+</body>
+  

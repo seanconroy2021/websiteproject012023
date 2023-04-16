@@ -14,10 +14,23 @@ h1 {
 }
 .profilepic{
   padding-top:15px;
-  padding-right:5px;
+  padding-right:2px;
   line-height:20px;
   font-weight:bold;
 }
+.name
+{
+   font-size: 110%;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  padding-top:10%;
+  padding-right:20px;
+
+}
+
+
 
 
 
@@ -61,6 +74,9 @@ p,a
 #welcomeusernotekeeperNOUSER {
   display: block;
 }
+
+
+
 
 /* Template for the start page css  https://semantic-ui-forest.com/templates */
 start { 

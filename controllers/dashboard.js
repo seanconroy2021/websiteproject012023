@@ -20,6 +20,7 @@ const dashboard = {
       title: 'Note Keeper Dashboard',
       noteList: noteListstore.getUserNotelist(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      profile: loggedInUser.profilepic,
     };
     logger.info('about to render' + viewData.noteList);
     response.render('dashboard', viewData);

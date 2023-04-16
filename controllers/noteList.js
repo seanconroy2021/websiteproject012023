@@ -10,10 +10,13 @@ import accounts from './accounts.js';
 const notelist = {
   index(request, response) {
     const notelistid = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.debug('Note List id = ' + notelistid);
     const viewData = {
       title: 'Notelist',
-      notelist: noteListstore.getnotelistid(notelistid)
+      notelist: noteListstore.getnotelistid(notelistid),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      profile: loggedInUser.profilepic,
     };
     response.render('noteList', viewData);
   },
