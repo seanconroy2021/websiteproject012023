@@ -31,6 +31,9 @@ router.get('/dashboard/deleteNoteCollection/:id', dashboard.deleteNoteCollection
 router.post('/notelist/:id/addnote', notelist.addnote);
 router.post('/dashboard/addnotecollection', dashboard.addnotecollection);
 router.post('/notelist/:id/updatenote/:noteid', notelist.updatenote);
+router.post('/blogpost/:id/addcomment', blog.addcomment);
+
+
 
 
 

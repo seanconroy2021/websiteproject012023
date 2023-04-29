@@ -19,21 +19,25 @@ const start = {
      const notelist = noteListstore.getAllNotes();
       let numnotelists = notelist.length;
       let numnotes = 0;
+      
     for (let item of notelist) {
      numnotes += item.notes.length;
     }
+      
+      let avgnotesperlist = numnotes / numnotelists;
 
       const viewData = {
         title: 'Welcome to the Note Keeper App!',
         totalnotelist: numnotelists,
         totalnotes: numnotes,
+        avgnotesperlist: avgnotesperlist,
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         profile: loggedInUser.profilepic
       };
 
       response.render('start', viewData);
     }
-    else response.redirect('/error');
+    else response.redirect('/');
   },
 
   

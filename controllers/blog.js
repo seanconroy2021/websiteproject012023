@@ -13,6 +13,7 @@ const blog = {
     logger.info('blog rendering');
     if (loggedInUser) {
       const viewData = {
+        id: request.params.id,
         title: 'Blog',
         bloglists: blogPostStore.getAllBlogPosts(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
@@ -22,7 +23,18 @@ const blog = {
     }
     else response.redirect('/');    
   },
- 
+  
+ addcomment(request, response) {
+    const blogpostId = request.params.id;
+    logger.debug('blog id is : '+ blogpostId);
+    const blogpost = blogPostStore.getblogpostId(blogpostId);
+   logger.debug('the blogpsot is '+blogpost);
+    const newcomment = {
+  comment:request.body.comment
+    };
+    blogPostStore.addcomment(blogpostId, newcomment);
+    response.redirect('/blog/');
+  },
 
 };
 

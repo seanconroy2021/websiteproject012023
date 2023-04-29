@@ -1,25 +1,55 @@
 {
   "blogCollection": [
     {
+      "id": "01",
       "author": "Josh Walsh",
       "date": "23/03/18",
       "TitleOfBlog": "Stay Organized with NoteKeeper",
-
       "Text1": "Are you tired of losing track of your important notes and reminders? Do you wish you had a tool that could help you stay organized and on top of your to-do list? Look no further than NoteKeeper!",
       "Text2": "NoteKeeper is a simple and intuitive app designed to help you keep track of your notes and tasks. With NoteKeeper, you can easily create, edit, and organize your notes, and set reminders for important deadlines and events.",
       "Text3": "One of the best things about NoteKeeper is its user-friendly interface. The app is designed to be intuitive and easy to use, so you can quickly and easily create new notes and access your existing ones. You can even organize your notes by category or priority level, making it easy to find the information you need when you need it. Another great feature of NoteKeeper is its reminders system. With just a few clicks, you can set reminders for important tasks and events, and get notified when they're due. This can be especially helpful for busy professionals or students who need to stay on top of multiple deadlines and assignments.",
-      "Image": "https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/self-organization.jpg?v=1679173038782"
+      "Image": "https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/self-organization.jpg?v=1679173038782",
+      "comments": [
+        {
+          "comment": "wow"
+        },
+        {
+          "comment": "sss"
+        },
+        {
+          "comment": "jjj"
+        },
+        {
+          "comment": "sean commented here"
+        },
+        {
+          "comment": "jh"
+        },
+        {
+          "comment": "j"
+        },
+        {
+          "comment": "jh"
+        }
+      ]
     },
-
     {
+      "id": "02",
       "author": "Josh Walsh",
       "date": "10/03/18",
       "TitleOfBlog": "Boosting Productivity with NoteKeeper: Companies That Swear By It",
-
       "Text1": "NoteKeeper is a popular productivity app used by individuals and companies around the world to keep track of their notes and to-do lists. But did you know that some of the biggest names in tech and business also rely on NoteKeeper to stay organized and productive?",
       "Text2": "One such company is Google, which has been using NoteKeeper for years to help its employees stay on top of their tasks and projects. With its intuitive interface and powerful features, NoteKeeper has become an essential tool for Google's fast-paced work environment.",
       "Text3": "Another company that swears by NoteKeeper is Tesla. Known for its innovative approach to technology and design, Tesla has embraced NoteKeeper as a key part of its workflow, allowing employees to easily track and organize their notes and ideas as they work on new products and initiatives. Whether you're a small business owner or a global enterprise, NoteKeeper can help you stay organized and focused on what matters most. With its powerful features and user-friendly interface, it's no wonder that so many companies have made NoteKeeper a part of their daily routine.",
-      "Image": "https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/big-tech-logo.png?v=1679159260550"
+      "Image": "https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/big-tech-logo.png?v=1679159260550",
+      "comments": [
+        {
+          "comment": "helloworlds"
+        },
+        {
+          "comment": "apple"
+        }
+      ]
     }
   ]
 }

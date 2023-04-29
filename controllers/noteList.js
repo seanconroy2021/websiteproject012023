@@ -57,9 +57,11 @@ const notelist = {
       title: request.body.title,
       dueDate: request.body.dueDate,
       note: request.body.note,
+      image:request.files.image
     };
-    noteListstore.editnote(notelistId, noteId, updatednote);
-    response.redirect('/noteList/' + notelistId);
+    noteListstore.editnote(notelistId, noteId, updatednote, function() {
+       response.redirect('/noteList/' + notelistId);;
+      });
   }
 
 };

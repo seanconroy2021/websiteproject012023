@@ -1,3 +1,9 @@
+
+{{#unless notelist.notes}}
+  <p class="ui center opaque aligned message">It's very quiet in here... start adding some notes!</p>
+{{/unless}}
+
+{{#if notelist.notes}}
 <table class="ui centered inverted black striped table">
   <thead>
     <tr>
@@ -10,7 +16,7 @@
   </thead>
 <tbody>
     {{#each notelist.notes}}
-    <form class = "ui stacked segment form" action="/notelist/{{../notelist.id}}/updatenote/{{id}}" method="POST">
+    <form class = "ui stacked segment form" action="/notelist/{{../notelist.id}}/updatenote/{{id}}" method="POST"  enctype="multipart/form-data" >
     <tr class="fields">
       <td class="field">
         <span class="ui input">
@@ -23,16 +29,12 @@
         </span>
       </td>
       <td class="field">
+      
+        <label>Image Reminder</label>
+        <input placeholder="Image Reminder" type="file" name="image" required>
+   
         <span class="ui input">
-          <input type="text" name="note" autofocus required title = "Please include a valid Genre" placeholder="Note" value = "{{note}}">         
-        </span>
-      </td>
-      <td class="">
-        <span class="ui input">
-        <a href={{image}} class="">
-        <img class="ui rounded small image" src={{image}}>
-    </a>
-        
+        <img class="ui rounded small image" src="{{image}}">
         </span>
       </td>
       <td class="center aligned">
@@ -48,6 +50,6 @@
     {{/each}}
   </tbody>
 </table>
-
+{{/if}}
 
 

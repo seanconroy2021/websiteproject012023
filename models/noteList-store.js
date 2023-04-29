@@ -76,16 +76,29 @@ async addnote(id, note,response) {
 
 
   
-  
-  
   addnotecollection(notelistcollection) {
     this.store.addCollection(this.collection, notelistcollection);
   },
   
   //new stuff
-    editnote(id, noteid, updatednote) {
+   async editnote(id, noteid, updatednote,response) {
+      function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(updatednote.image.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  updatednote.image = result.url;
+  
+  
+    
     const arrayName = "notes";
     this.store.editItem(this.collection, id, noteid, arrayName, updatednote);
+    response();
   },
     
   getUserNotelist(userid) {
