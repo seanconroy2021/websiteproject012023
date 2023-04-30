@@ -12,6 +12,7 @@
       <th class="three wide">Note</th>
       <th class="one wide"> </th>
       <th class="one wide"> </th>
+      <th class="one wide"> </th>
     </tr>
   </thead>
 <tbody>
@@ -28,6 +29,16 @@
           <input type="text" name="dueDate" required title = "Please include a valid Artist" placeholder="Due Date" value = "{{dueDate}}">
         </span>
       </td>
+      <td class="field">
+        {{ dueDate}}
+      </td>
+     <td class="field">
+  <span class="ui  input">
+    <textarea name="note" autofocus required title="Please include a valid Genre" placeholder="Note" rows="5" 
+    cols="50">{{note}}</textarea> 
+  </span>
+</td>
+
       <td class="field">
       
         <label>Image Reminder</label>

@@ -24,17 +24,22 @@ const blog = {
     else response.redirect('/');    
   },
   
- addcomment(request, response) {
+addcomment(request, response) {
     const blogpostId = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.debug('blog id is : '+ blogpostId);
     const blogpost = blogPostStore.getblogpostId(blogpostId);
-   logger.debug('the blogpsot is '+blogpost);
+   logger.debug('the blogpost is '+blogpost);
+    const now = new Date();
     const newcomment = {
-  comment:request.body.comment
+      comment: request.body.comment,
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      profile: loggedInUser.profilepic,
+      date: now.toISOString(),
     };
     blogPostStore.addcomment(blogpostId, newcomment);
     response.redirect('/blog/');
-  },
+},
 
 };
 

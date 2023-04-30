@@ -15,7 +15,7 @@ const about = {
     if (loggedInUser) {
       const viewData = {
         title: 'About the Note Keeper',
-        developers: teamListStore.getAllTeam(),
+        team: teamListStore.getAllTeam(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
         profile: loggedInUser.profilepic
       };

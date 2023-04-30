@@ -1,34 +1,132 @@
-<h3 class="ui  center aligned header">The Note Keeper App now contains:</h3>
-<div class="ui inverted two statistics">
-    <div class="ui huge statistic">
-        <div class="value">
-            {{totalnotelist}}
-        </div>
-        <div class="label">
-            Note Lists
-        </div>
+<h2 class=" ui header center aligned">
+{{fullname}} Personal Statistics
+</h2>
+<hr>
+
+<div class="ui two large inverted statistics" >
+ <div class="statistic">
+    <div class="value">
+      <img src="https://cdn.glitch.global/22cd1e1e-e5b6-419a-bbd0-e3c74676bace/cat.gif?v=1682807054924" class="ui  circular inline image">
+      {{numnotelistsUser}}
     </div>
-    <div class="ui huge statistic">
-        <div class="value">
-            {{totalnotes}}
-        </div>
-        <div class="label">
-            Note's
-        </div>
+    <div class="label">
+      {{fullname}} Note Lists
     </div>
+  </div>
+   <div class="statistic">
+    <div class="value">
+      <img src="https://cdn.glitch.global/22cd1e1e-e5b6-419a-bbd0-e3c74676bace/notes.gif?v=1682807245099" class="ui circular inline image">
+      {{numnotesUser}}
+    </div>
+    <div class="label">
+      {{fullname}} Note's
+    </div>
+  </div>
+</div>
+<br>
+<span class="centerds">
+<div class="ui inverted large  statistic"  >
+  <div class="value">
+   {{useravgnumberofnotes}}
+  </div>
+  <div class="label">
+    {{fullname}} avergae number of notes per Note List
+  </div>
+</div>
+</span>
+<br>
+<div class="ui two inverted statistics">
+  <div class="statistic">
+    <div class="value">
+    <i class="{{usermosticonName}} icon"></i> {{usermostnoteslistname}}
+    </div>
+    <div class="label">
+     {{fullname}} Note List with most Note's
+    </div>
+  </div>
+  
+   <div class="statistic">
+    <div class="value">
+      <i class="{{userliconName}} icon"></i> {{userlnoteslistname}}
+    </div>
+    <div class="label">
+      {{fullname}} Note List with least Note's
+    </div>
+  </div>
 </div>
 
-
-<h3 class="ui  center aligned header">The Average Amount of notes per Note Lisr:</h3>
-<div class="ui inverted two statistics">
-    <div class="ui huge statistic">
-        <div class="value">
-            {{avgnotesperlist}}
-        </div>
-        <div class="label">
-          AVG NOTE
-        </div>
+<h2 class=" ui header center aligned">
+Overall Statistics
+</h2>
+<hr>
+<div class="ui two large inverted statistics" >
+ <div class="statistic">
+    <div class="value">
+      <img src="https://cdn.glitch.global/22cd1e1e-e5b6-419a-bbd0-e3c74676bace/cat.gif?v=1682807054924" class="ui  circular inline image">
+      {{totalnotelist}}
     </div>
+    <div class="label">
+      Total Note Lists
+    </div>
+  </div>
+   <div class="statistic">
+    <div class="value">
+      <img src="https://cdn.glitch.global/22cd1e1e-e5b6-419a-bbd0-e3c74676bace/notes.gif?v=1682807245099" class="ui circular inline image">
+      {{totalnotes}}
+    </div>
+    <div class="label">
+      Total Note's
+    </div>
+  </div>
 </div>
+<br>
+<span class="centerds">
+  <div class="ui two inverted statistics">
+    
+  <div class="large statistic">
+    <div class="value">
+      <i class="user icon"></i> {{numuserlist}}
+    </div>
+    <div class="label">
+        Number of Users       
+    </div>
+  </div>
+<div class="ui inverted large  statistic"  >
+  <div class="value">
+   {{avgnotesofuser}}
+  </div>
+  <div class="label">
+    avergae number of note's of user
+  </div>
+</div>
+</div>
+</span>
+<br>
+<div class="ui two large inverted statistics" >
+ <div class="statistic">
+    <div class="value">
+      <img src="{{mostprofile}}" class="ui  circular inline image">
+      {{usermostnotes}}
+    </div>
+    <div class="label">
+     {{userWithMostNotes}} has the most note's
+    </div>
+  </div>
+  
+  
+   <div class="statistic">
+    <div class="value">
+      <img src="{{userleastprofile}}" class="ui  circular inline image">
+      {{userleastNotes}}
+    </div>
+    <div class="label">
+     {{userWithleastNotes}} has the least note's
+    </div>
+  </div>
+  
+</div>
+
 
     
+
+
