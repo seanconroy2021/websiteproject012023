@@ -37,16 +37,6 @@ const accounts = {
     response.render('signup', viewData);
   },
 
-//  register function to render the registration page for adding a new user
-//   register(request, response) {
-//     const user = request.body;
-//     user.id = uuidv4();
-//     userStore.addUser(user);
-//     logger.info('registering' + user.email);
-//     response.cookie('noteList', user.email); // allow the user auto login 
-//     response.redirect('/start');
-   
-//   },
   
 register(request, response) {
   const user = request.body;
@@ -72,6 +62,8 @@ register(request, response) {
       response.redirect('/login');
     }
   },
+  
+
 
  //utility function getCurrentUser to check who is currently logged in
   getCurrentUser (request) {

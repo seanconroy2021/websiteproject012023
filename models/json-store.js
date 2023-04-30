@@ -65,6 +65,17 @@ class JsonStore {
     const results = this.db.data[collection].filter(filter);
     return results;
   }
+  
+  // newly added 
+  async editCollection(collection, id, newObj) {
+  const index = this.db.data[collection].findIndex(c => c.id === id);
+  if (index === -1) {
+    throw new Error(`Cannot find collection with ID ${id}`);
+  }
+  this.db.data[collection].splice(index, 1, newObj);
+  await this.db.write();
+}
+
 
 
   

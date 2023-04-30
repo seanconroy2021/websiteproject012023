@@ -1,81 +1,197 @@
 {
   "noteList": [
     {
-      "id": "d7391be0-a95d-42dc-8209-f4d60516c11f",
-      "userid": "a400f546-8c16-4d0a-b042-cbb6438dd07a",
-      "title": "apple",
-      "catergory": "Work",
-      "priorty": "1",
-      "description": "1221",
-      "iconName": "home",
-      "notes": [
-        {
-          "id": "ca3ea8d7-9cb6-45d6-bd41-481fb44dc03b",
-          "title": "hhh",
-          "dueDate": "1222-12-12",
-          "note": "    111",
-          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682818397/koxvtbh5mgjmsdeu1ns9.jpg"
-        },
-        {
-          "id": "b5e6dbf8-41a8-49ca-8780-c3ebccce5435",
-          "title": "122112",
-          "dueDate": "0011-11-11",
-          "note": "    111",
-          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682818440/yrmhpznwb2vtj97t0xsl.jpg"
-        }
-      ]
-    },
-    {
-      "id": "702e07e1-e61f-424f-9fff-37766af13c1e",
-      "userid": "a400f546-8c16-4d0a-b042-cbb6438dd07a",
-      "title": "1",
-      "catergory": "Home",
-      "priorty": "1",
-      "description": "11",
+      "id": "8096df93-1b8e-440d-b555-7b11af009cdb",
+      "userid": "48f00404-b94a-42cc-80ee-f820a7d7634c",
+      "title": "Java Project",
+      "catergory": "College",
+      "priorty": "5",
+      "description": "Completing of the Java Moudle for college",
       "iconName": "terminal",
       "notes": [
         {
-          "id": "a0fce04f-1947-4179-b465-52e50384a168",
-          "title": "sean",
-          "dueDate": "0222-02-22",
-          "note": "    222",
-          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682818328/weqwrwltcnvv562gyhk0.jpg"
+          "id": "ad2fd505-a0af-4e0e-b182-29079acb0dca",
+          "title": "Java Doc",
+          "dueDate": "2023-05-01",
+          "note": "    Complete The Java Doc for the project 01 \r\n      - upload it to dropbox\r\n     - submit for grading ",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682877879/yrlacpxln69uapo5xied.jpg"
+        },
+        {
+          "id": "8474e56d-3a71-4a36-bba6-85afbfcd7800",
+          "title": "Practical 01 - sum two number",
+          "dueDate": "2023-05-02",
+          "note": "Adding X and Y, we get the resultant as,\r\n\r\nX + Y = Z.",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682877967/xmuslwcsn53pybismcv7.jpg"
         }
       ]
     },
     {
-      "id": "7d4c10af-23a2-41d0-888d-65a5b2707d4a",
-      "userid": "a400f546-8c16-4d0a-b042-cbb6438dd07a",
-      "title": "ddd",
-      "catergory": "Home",
+      "id": "dc45ca07-52a7-4192-8010-2016b387382e",
+      "userid": "48f00404-b94a-42cc-80ee-f820a7d7634c",
+      "title": "Holidays",
+      "catergory": "Travel",
       "priorty": "1",
-      "description": "11",
+      "description": "What I need for my Holidays",
+      "iconName": "Plane ",
+      "notes": [
+        {
+          "id": "5ff9bff3-4056-4d9a-827a-144252be8dad",
+          "title": "Register for visa ",
+          "dueDate": "2023-06-01",
+          "note": "   link to for website \r\n https://www.dfa.ie/passportonline/",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682878100/dolx9lj5ccj23s5iihip.jpg"
+        },
+        {
+          "id": "b453c815-397f-4bbb-9388-45f738c640d6",
+          "title": "Ring Dog Hotel",
+          "dueDate": "2023-05-10",
+          "note": "    www.pawshake.ie\r\n    053 9234678",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682878227/piouym9eewmunangs7wm.jpg"
+        },
+        {
+          "id": "0d2dea56-4b63-44c4-b72b-b81430059675",
+          "title": "Go on holiday ",
+          "dueDate": "2023-06-20",
+          "note": "List of Items I need\r\n===============\r\nbring sunscreen\r\nbring clothes\r\nbring plug adapter",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682878354/gaa82p1lworxiirsyqlh.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6564d228-e5ad-47cc-90b0-db7ed192f8e2",
+      "userid": "d9f05596-719d-4cac-a2d0-acacd51c6773",
+      "title": "History Class Homework",
+      "catergory": "Miscellaneous",
+      "priorty": "5",
+      "description": "Homework for Miss Blackburn class ",
       "iconName": "leanpub",
       "notes": [
         {
-          "id": "da38dc3c-a62e-4932-94a3-1c880fe7f436",
-          "title": "11",
-          "dueDate": "1111-11-11",
-          "note": "    111",
-          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682818498/rzi6t50azyv8z3g2qlnj.jpg"
+          "id": "ae6fb1f6-8c5b-4c18-b00b-3374b65ee370",
+          "title": "Write a 200 word essay (50%)",
+          "dueDate": "2023-06-30",
+          "note": "    Write an essay on these presidents shown in the\r\n    image.\r\n\r\nEach president write about birthplace \r\nEach president write about education\r\nEach president write accomplishment \r\n\r\nUpload lit in PDF fourm \r\n",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682878685/atybwdyeyowhlzb92cay.jpg"
+        },
+        {
+          "id": "f3784135-cb91-4a3e-999d-543c80172c01",
+          "title": "Presentation (50%)",
+          "dueDate": "2023-07-25",
+          "note": "\r\nUsing PowerPoint make a short 8 min presentation talking about the moon landing and the space race.",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682879063/cc0ejejc8vnrbltlqybn.avif"
         }
       ]
     },
     {
-      "id": "df6619b9-882d-4659-a7f5-b1b89c6a3153",
-      "userid": "f642c5fb-21b6-4d2c-b280-bda3c1b0b72e",
-      "title": "sean",
-      "catergory": "Home",
-      "priorty": "1",
-      "description": "1",
-      "iconName": "home",
+      "id": "192a4e05-71a3-4ed8-98a5-6edb81e45c90",
+      "userid": "d9f05596-719d-4cac-a2d0-acacd51c6773",
+      "title": "Wood Work Class Homework",
+      "catergory": "Miscellaneous",
+      "priorty": "4",
+      "description": "All of the projects that need to be done for wood work ",
+      "iconName": "pencil alternate ",
       "notes": [
         {
-          "id": "a10238b5-c620-406e-a708-05fb9934ade7",
-          "title": "1",
-          "dueDate": "1111-11-11",
-          "note": "    111",
-          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682843863/s3qzrt7k24mbpc93qolu.jpg"
+          "id": "f6edd9d6-fd19-4f82-9672-886e8f421ba8",
+          "title": "Building a tissue roll holder ",
+          "dueDate": "2024-06-20",
+          "note": " Paper towels are an indispensable part of the modern kitchen, but it can be difficult to find a really well made holder. This ‘how to’ explores one method of making a kitchen towel holder which will hold a standard sized roll\r\nLink to video: https://www.axminstertools.com/ie/ideas-advice/how-to-kitchen-towel-holder/",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682878910/sngee5kpcmuomkmbh1f0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "c48c13fc-496a-42f4-a52a-92a01204d9a0",
+      "userid": "8dae5b26-eed2-49a0-8871-6eaabf5ac3dc",
+      "title": "sean",
+      "catergory": "Work",
+      "priorty": "1",
+      "description": "111",
+      "iconName": "leanpub",
+      "notes": []
+    },
+    {
+      "id": "1b2e551f-2454-4147-8898-c2c4b170a931",
+      "userid": "f92457a7-51b5-49c5-92a3-3c3a2064cf34",
+      "title": "personal",
+      "catergory": "Miscellaneous",
+      "priorty": "1",
+      "description": "11",
+      "iconName": "address book ",
+      "notes": []
+    },
+    {
+      "id": "8fcbce88-8629-4110-a227-5c4152f38079",
+      "userid": "6b71f3fc-27cf-422d-9886-e8a58e16a9f8",
+      "title": "Science Class Assingments",
+      "catergory": "College",
+      "priorty": "5",
+      "description": "All of the projects that need to be done for science",
+      "iconName": "leanpub",
+      "notes": [
+        {
+          "id": "f178e673-c307-46bf-8950-e7c874d2d893",
+          "title": "Assingment 01 ",
+          "dueDate": "2023-05-20",
+          "note": "   Complete a short presentation on how the cells work",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682880237/q8ktnxm2gfxw6p1rlvqh.jpg"
+        }
+      ]
+    },
+    {
+      "id": "89c87de8-9f94-4759-a1b3-13bbfd72d42e",
+      "userid": "6b71f3fc-27cf-422d-9886-e8a58e16a9f8",
+      "title": "Coding Assingments",
+      "catergory": "College",
+      "priorty": "5",
+      "description": "All of my Java Code that need to be done",
+      "iconName": "terminal",
+      "notes": [
+        {
+          "id": "44b9b69d-7792-4a99-8d54-6b59b1eca104",
+          "title": "Assignment 01",
+          "dueDate": "2023-06-30",
+          "note": "This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to Java Programming language.\r\n\r\nYou will now use this knowledge to create a user storage app",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682880574/re2sfsdhxyzhdbf7gx4z.png"
+        },
+        {
+          "id": "a306d65e-90eb-4179-a343-2115ae631ee0",
+          "title": "Setting up Github",
+          "dueDate": "2023-07-25",
+          "note": "Setting up my Github Account \r\nLearning how to use it \r\nupload all my assignments to to it",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682880652/xdpvbnpj5fmkmjhiwjqi.jpg"
+        },
+        {
+          "id": "3d99ff26-7abd-4293-9ef3-e523bcdc8cd7",
+          "title": "Assignment  02",
+          "dueDate": "2023-07-30",
+          "note": " This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to Java Programming language.\r\n  \r\n  You will now use this knowledge to create a personal calculator ",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682880709/eai8uwksvgfrhfadathc.png"
+        }
+      ]
+    },
+    {
+      "id": "b4190b3f-2d3d-4e96-a4df-72e15160d66c",
+      "userid": "6b71f3fc-27cf-422d-9886-e8a58e16a9f8",
+      "title": "Job Interviews ",
+      "catergory": "Work",
+      "priorty": "5",
+      "description": "All my job interviews and dates ",
+      "iconName": "address book ",
+      "notes": [
+        {
+          "id": "77825558-99db-4a4f-9f72-b916f89c78bc",
+          "title": "Red Hat 01",
+          "dueDate": "2023-06-20",
+          "note": "INTERVIEW ON ZOOM\r\n  \r\n  With Sara make sure to have all questions prepared and know a lit background on the company\r\n  ",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682880867/gyf5eubkekdyb55agbvb.gif"
+        },
+        {
+          "id": "8ce9e7c5-6024-4931-8326-99121314a3e9",
+          "title": "Intel 01",
+          "dueDate": "2023-04-20",
+          "note": "INTERVIEW ON Google Meets\r\n    \r\nWith Intel \r\n- make sure to go over the MySQL code.\r\n- Have a time found a subject hard\r\n\r\n{completed}\r\n\r\n    ",
+          "image": "http://res.cloudinary.com/duihhoiso/image/upload/v1682881009/whlxgxxbbobt0k8aah2l.gif"
         }
       ]
     }

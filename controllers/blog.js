@@ -1,46 +1,44 @@
-'use strict';
+"use strict";
 
 // import all required modules
-import logger from '../utils/logger.js';
-import blogPostStore from '../models/blogPost-store.js';
-import accounts from './accounts.js';
-
+import logger from "../utils/logger.js";
+import blogPostStore from "../models/blogPost-store.js";
+import accounts from "./accounts.js";
 
 // create blog object
 const blog = {
-   index(request, response) {
+  index(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.info('blog rendering');
+    logger.info("blog rendering");
     if (loggedInUser) {
       const viewData = {
         id: request.params.id,
-        title: 'Blog',
+        title: "Blog",
         bloglists: blogPostStore.getAllBlogPosts(),
-        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        profile: loggedInUser.profilepic
+        fullname: loggedInUser.firstName + " " + loggedInUser.lastName,
+        profile: loggedInUser.profilepic,
       };
-      response.render('blog', viewData);
-    }
-    else response.redirect('/');    
+      response.render("blog", viewData);
+    } else response.redirect("/");
   },
-  
-addcomment(request, response) {
+
+  // add comment to each post
+  addcomment(request, response) {
     const blogpostId = request.params.id;
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.debug('blog id is : '+ blogpostId);
+    logger.debug("blog id is : " + blogpostId);
     const blogpost = blogPostStore.getblogpostId(blogpostId);
-   logger.debug('the blogpost is '+blogpost);
+    logger.debug("the blogpost is " + blogpost);
     const now = new Date();
     const newcomment = {
       comment: request.body.comment,
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      fullname: loggedInUser.firstName + " " + loggedInUser.lastName,
       profile: loggedInUser.profilepic,
       date: now.toISOString(),
     };
     blogPostStore.addcomment(blogpostId, newcomment);
-    response.redirect('/blog/');
-},
-
+    response.redirect("/blog/");
+  },
 };
 
 // export the blog module

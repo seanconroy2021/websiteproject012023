@@ -30,6 +30,7 @@ const handlebars = exphbs.create({
     uppercase: (inputString) => {
       return inputString.toUpperCase();
     },
+    
     timeSince: (dateString) => {
       const now = new Date();
       const date = new Date(dateString);
@@ -42,12 +43,23 @@ const handlebars = exphbs.create({
         return `${mins} minute${mins > 1 ? "s" : ""} ago`;
       }
     },
+    
     yearsSinceJoining: (joinYear) => {
     const now = new Date();
     const currentYear = now.getFullYear();
     const years = currentYear - joinYear;
     return years;
   },
+  
+  daysUntilDue: (dueDateString) => {
+  const now = new Date();
+  const dueDate = new Date(dueDateString);
+  const diff = dueDate.getTime() - now.getTime();
+  const days = Math.ceil(diff / 1000 / 60 / 60 / 24);
+  return days;
+}
+    
+    
   },
 });
 

@@ -1,5 +1,3 @@
-{{> welcomemenu id='login' }}
-
 
 <!-- https://semantic-ui-forest.com/templates/semantic-ui/login -->
  <style type="text/css">
@@ -18,29 +16,47 @@
       }
 </style>
 
-  <body id="root">
+
     <div class="ui middle aligned center aligned grid">
       <div class="column">
         <h2 class="ui inverted center aligned header">
-          <img class="image" src="https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/79a1a9fb-f4cb-495b-99cf-97eb8d24e974.image.png?v=1678188906814" /> Log-in to your
-          account
+          <img class="image" src="https://cdn.glitch.global/7a6aee71-7259-46fe-b58f-b60891ace950/79a1a9fb-f4cb-495b-99cf-97eb8d24e974.image.png?v=1678188906814" /> Edit {{fullname}} Account
         </h2>
+        <div class="ui cotainer center aligned compact message">
+  <p>Please note after any changes you will be redircted to the login page where you can input your new details. Note Keeper now allow you {{fullname}}, to update your info without losing any of your content. </p>
+</div>
         
-        
-        <form class="ui  large form" action="/authenticate" method="POST" >
+        <form class="ui  large form" action="/settings/updateuser" method="POST" enctype="multipart/form-data" >
           <div class="ui stacked segment">
-            <div class="field">
-                  <label for="email">Email</label> <input placeholder="Email" name="email" autofocus required>
+            <div class=" two fields">
+                   <div class="field">
+      <label for="firstName">First Name</label>
+      <input placeholder="{{firstName}}" type="text"  name="firstName" autofocus required>
+    </div>
+    <div class="field">
+      <label for="lastName">Last Name</label>
+      <input placeholder="{{lastName}}" type="text"  name="lastName" required>
+    </div>
             </div>
-            <div class="field">
-              <label for="password">Password</label> <input type="password"  name="password" required >
-              </div>
+              <div class="field">
+    <label for="email">Email</label>
+    <input placeholder="{{email}}" type="text" name="email" required>
+  </div>
+ <div class="field">
+    <label>Profile Pic</label>
+    <input placeholder="Image" type="file" name="profilepic" required>
+</div>
             
-            <button class="ui black submit button">Login</button>
+  <div class="field">
+    <label for="password">Password</label>
+    <input placeholder="{{password }}" type="password" name="password" required>
+  </div>
+            
+            
+            <button class="ui black submit button">Update</button>
           </div>
           <div class="ui error message"></div>
         </form>
-        <div class="ui message">New to us?<a href="/signup"> Sign Up</a></div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -79,4 +95,3 @@
         });
       });
     </script>
-</body>

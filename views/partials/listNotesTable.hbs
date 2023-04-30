@@ -9,7 +9,7 @@
     <tr>
       <th class="four wide">Title</th>
       <th class="four wide">Due Date</th>
-      <th class="three wide">Note</th>
+      <th class="three wide">Day's Till Due Date</th>
       <th class="one wide"> </th>
       <th class="one wide"> </th>
       <th class="one wide"> </th>
@@ -26,22 +26,26 @@
       </td>
       <td class="field">
         <span class="ui input">
-          <input type="text" name="dueDate" required title = "Please include a valid Artist" placeholder="Due Date" value = "{{dueDate}}">
+          <input type="date" name="dueDate" required title = "Please include a due date" placeholder="Due Date" value = "{{dueDate}}">
         </span>
       </td>
-      <td class="field">
-        {{ dueDate}}
+      
+      <td class="">
+        <h2 class="ui center aligned">
+          {{ daysUntilDue dueDate}}
+        </h2>
       </td>
+      
+      
      <td class="field">
   <span class="ui  input">
-    <textarea name="note" autofocus required title="Please include a valid Genre" placeholder="Note" rows="5" 
+    <textarea name="note" autofocus required title="Please include note" placeholder="Note" rows="5" 
     cols="50">{{note}}</textarea> 
   </span>
 </td>
 
       <td class="field">
       
-        <label>Image Reminder</label>
         <input placeholder="Image Reminder" type="file" name="image" required>
    
         <span class="ui input">

@@ -44,12 +44,7 @@ const noteListStore = {
     this.store.removeCollection(this.collection, noteListCollection);
   },
 
-  // addnote(id, note) {
-  //   const noteList = this.getnotelistid(id);
-  //   noteList.notes.push(note);
-  // },
-  
-  
+ 
 async addnote(id, note,response) {
   function uploader(){
     return new Promise(function(resolve, reject) {  

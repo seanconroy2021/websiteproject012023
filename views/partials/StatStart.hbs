@@ -1,3 +1,10 @@
+{{#unless numnotelistsUser}}
+  <p class="ui container center large  aligned message">{{fullname}} Add some note lists and notes to get personal statistics</p>
+{{/unless}}
+
+
+
+{{#if numnotelistsUser}}
 <h2 class=" ui header center aligned">
 {{fullname}} Personal Statistics
 </h2>
@@ -54,7 +61,14 @@
     </div>
   </div>
 </div>
+{{/if}}
 
+{{#unless totalnotelist}}
+  <p class="ui container center large  aligned message">Ooh No look like their is no one using the Note Keeper come back later see some Statistics</p>
+{{/unless}}
+
+
+{{#if totalnotelist}}
 <h2 class=" ui header center aligned">
 Overall Statistics
 </h2>
@@ -125,7 +139,7 @@ Overall Statistics
   </div>
   
 </div>
-
+{{/if}}
 
     
 

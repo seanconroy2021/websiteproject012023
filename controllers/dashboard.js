@@ -25,7 +25,7 @@ const dashboard = {
     logger.info('about to render' + viewData.noteList);
     response.render('dashboard', viewData);
     }
-    else response.redirect('/about');
+    else response.redirect('/');
   },
 
     deleteNoteCollection(request, response) {
